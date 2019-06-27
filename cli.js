@@ -3,7 +3,7 @@
 const [,, ... args] = process.argv
 const help = "[USAGE]:\n"+
 "calc add <num1> <num2> ... <num>\n"+
-"calc substract <num1> <num2> ... <num>\n"+
+"calc subtract <num1> <num2> ... <num>\n"+
 "calc multiply <num1> <num2> ... <num>\n"+
 "calc divide <num1> <num2> ... <num>"
 
@@ -24,7 +24,7 @@ if(args.length >= 2) {
 		}
 		console.log(`result is ${res.toFixed(2)}`)
 		break
-	case "substract":
+	case "subtract":
 		for (var i = 1; i < arr.length; i++) {
 			res -= arr[i]
 		}
